@@ -1,18 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Page from './components/sections/Page';
+
+import Header from './components/sections/Header';
+import Navigation from './components/sections/Navigation';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-   
-   <>
-   <h1 className="text-7xl font-bold">Hello World</h1>
-   <h1 className="text-5xl font-light">Sample Text</h1>
-     
-   </> 
+          <Page>
+            <Header>
+              <Navigation/>
+            </Header>
+          </Page>
   )
 }
 
