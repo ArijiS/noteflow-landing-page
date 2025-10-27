@@ -1,7 +1,11 @@
 import React from 'react'
-import ArrowRight from "../icons/ArrowRight";
-import ArrowRightLine from '../icons/ArrowRightLine';
+import { motion } from 'framer-motion';
+
+
+import { BsDashLg } from "react-icons/bs";
+import { PiCaretRightBold } from "react-icons/pi";
 import heroGraphic from "../../assets/graphics/heroGraphic.webp";
+
 
 
 const Hero = () => {
@@ -14,19 +18,31 @@ const Hero = () => {
             <p className="text-xl/[2.5rem] font-light text-primary-100 mb-10">Let AI organize & summarize your notes,<br/>
                 saving you time and boosting productivity</p>
 
-            <button className="flex text-primary-1300 font-light text-lg bg-primary-500 px-8 py-5 gap-x-3 w-fit rounded-full primary-glow hover:primary-50-glow hover:bg-primary-50 cursor-pointer group transition-properties"
+            <motion.button className="flex text-primary-1300 font-light text-lg bg-primary-500 px-8 py-5 gap-x-3 w-fit rounded-full primary-glow hover:primary-50-glow hover:bg-primary-50 cursor-pointer group transition-properties"
+            whileHover="hover"
             ><p>Get Started</p>
-            <div className="w-6">
-                <ArrowRightLine alt="arrow right line" className="inline stroke-primary-1300 -mr-3 w-3" width={2.5}/>
-                <ArrowRight alt="arrow right" className="inline stroke-primary-1300 w-5" width={2}/>
-            </div>
             
-            </button>
+            <motion.div 
+            className="flex items-center stroke-primary-1300" 
+            variants={{hover:{x:8}}}
+            transition={{type: "tween", duration: 0.2, ease: "easeInOut"}}
+            >
+                <motion.span
+                initial={{opacity: 0}}
+                variants= {{hover:{opacity:1}}}
+                transition={{type: "tween", duration:0.15, ease: "easeInOut"}}
+                >
+                    <BsDashLg className="-mr-3.5 stroke-1"/>
+                </motion.span>
+                <PiCaretRightBold/>
+            </motion.div>
+            
+            </motion.button>
         </div>
 
-        <div>
-            <div/>
-            <img src={heroGraphic} alt="" className="max-h-120 w-auto justify-self-end"/>
+        <div className="relative">
+            <div className="absolute top-0 right-0 left-0 bottom-0 bg-primary-1300 rounded-full blur-2xl"/>
+            <img src={heroGraphic} alt="" className="relative max-h-120 w-auto justify-self-end"/>
         </div>
 
     </div>
