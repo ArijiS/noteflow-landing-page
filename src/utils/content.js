@@ -110,8 +110,8 @@ const logos = [
 
 const frequentlyAskedQuestions = [
   {
-    category: "General",
     id: 1,
+    category: "General",
     questions: [
       {
         id: 1,

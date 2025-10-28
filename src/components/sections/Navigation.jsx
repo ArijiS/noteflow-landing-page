@@ -5,7 +5,7 @@ import { navigationLinks } from '../../utils/content';
 
 const Navigation = () => {
   return (
-    <nav className="flex justify-between items-center m-auto max-w-360">
+    <nav className="py-10 px-25 flex justify-between items-center m-auto max-w-360">
       <a href="#" className="flex gap-x-3">
         <img src={logo} alt="" className="h-6" />
         <p className="font-bold text-[1.25rem] tracking-tight">NoteFlow</p>

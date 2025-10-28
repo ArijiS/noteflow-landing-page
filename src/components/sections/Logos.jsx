@@ -4,8 +4,8 @@ import {logos} from "../../utils/content";
 
 const Logos = () => {
   return (
-    <section className="bg-linear-to-b from-primary-1300 to-primary-1500 px-25 py-28">
-        <div className="max-w-360 m-auto">
+    <section className="bg-linear-to-b from-primary-1300 to-primary-1500">
+        <div className="max-w-360 m-auto px-25 py-28">
             <p className="text-xl tracking-normal mb-20 text-center font-light">Organizations powered by <span className="font-bold">NoteFlow</span></p>
 
             <div className="flex flex-col gap-y-16">

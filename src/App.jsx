@@ -10,6 +10,8 @@ import Main from './components/sections/Main';
 import Logos from './components/sections/Logos';
 import Features from './components/sections/Features';
 
+import FAQs from './components/sections/FAQ/FAQs';
+
 
 function App() {
   
@@ -26,6 +28,7 @@ function App() {
             <Main>
               <Logos />
               <Features />
+              <FAQs/>
             </Main>
 
           </Page>

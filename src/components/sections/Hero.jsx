@@ -10,7 +10,7 @@ import heroGraphic from "../../assets/graphics/heroGraphic.webp";
 
 const Hero = () => {
   return (
-    <div className="tracking-tight m-auto max-w-360 grid grid-cols-[5fr_4fr] gap-x-17 justify-between items-center py-42">
+    <div className="tracking-tight m-auto max-w-360 grid grid-cols-[5fr_4fr] gap-x-17 justify-between items-center py-42 px-25">
 
         <div className="flex flex-col">
             <h1 className="text-6xl/[4.5rem] font-semibold mb-6 tracking-tighter">AI-Powered Notes. Organize and Summarize in Seconds</h1>
