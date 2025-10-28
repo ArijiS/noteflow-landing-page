@@ -13,7 +13,7 @@ const Hero = () => {
     <div className="tracking-tight m-auto max-w-360 grid grid-cols-[5fr_4fr] gap-x-17 justify-between items-center py-42">
 
         <div className="flex flex-col">
-            <h1 className="text-6xl/[4.5rem] font-semibold mb-6">AI-Powered Notes. Organize and Summarize in Seconds</h1>
+            <h1 className="text-6xl/[4.5rem] font-semibold mb-6 tracking-tighter">AI-Powered Notes. Organize and Summarize in Seconds</h1>
 
             <p className="text-xl/[2.5rem] font-light text-primary-100 mb-10">Let AI organize & summarize your notes,<br/>
                 saving you time and boosting productivity</p>
