@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 
 
 import { BsDashLg } from "react-icons/bs";
@@ -18,7 +18,7 @@ const Hero = () => {
             <p className="text-xl/[2.5rem] font-light text-primary-100 mb-10">Let AI organize & summarize your notes,<br/>
                 saving you time and boosting productivity</p>
 
-            <motion.button className="flex text-primary-1300 font-light text-lg bg-primary-500 px-8 py-5 gap-x-3 w-fit rounded-full primary-glow hover:primary-50-glow hover:bg-primary-50 cursor-pointer group transition-properties"
+            <motion.button className="flex text-primary-1300 font-light text-lg bg-primary-500 px-8 py-5 gap-x-2 w-fit rounded-full primary-glow hover:primary-50-glow hover:bg-primary-50 cursor-pointer group transition-properties"
             whileHover="hover"
             ><p>Get Started</p>
             
