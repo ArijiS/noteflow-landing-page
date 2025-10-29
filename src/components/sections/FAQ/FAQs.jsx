@@ -52,7 +52,7 @@ const FAQs = () => {
             <FAQList 
               category={category}
               activeQuestions={activeQuestion}
-              questions={questionsArr}
+              questionsArr={questionsArr}
               handleQuestionClick={handleQuestionClick}
             />            
         </div>
