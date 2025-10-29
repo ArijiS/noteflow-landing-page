@@ -19,12 +19,16 @@ const FAQ = ({question, activeQuestion, handleQuestionClick}) => {
           <p className="font-medium text-xl tracking-tighter">{question.question}</p>
           
           <div className="ml-auto flex grow-0 shrink-0 pl-4 w-12 items-center justify-center">
-            <CaretUp width={2.5} className="stroke-primary-50"/>
+            <CaretUp width={2.5} className="stroke-primary-50" activeQuestion = {activeQuestion === question.id}/>
           </div>
 
         </button>
 
-        <motion.p className="text-primary-100 tracking-normal text-lg font-light mt-4 pl-20 pr-14">
+        <motion.p className="text-primary-100 tracking-normal text-lg/8 font-light pt-0 pl-20 pr-14"
+          initial = {{ opacity: 0, maxHeight: 0, visibility: "hidden" }}
+          animate = {activeQuestion === question.id ? {opacity: 1, maxHeight: "400px", visibility: "visible", paddingTop: "1rem"} : {}}
+          transition = {{duration: 0.3, ease: "easeInOut"}}
+        >
           {question.answer}
         </motion.p>
     </motion.li>

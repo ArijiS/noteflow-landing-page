@@ -27,12 +27,12 @@ const FAQList = ({category, activeQuestion, questionsArr, handleQuestionClick}) 
         
         onViewportEnter = {()=> setInView(true)}
         onViewportLeave = {()=> setInView(false)}
-        viewport={{once: false, amount: 0.5}}
+        viewport={{once: true, amount: 0.5}}
     >
       {
         questionsArr.map(
           (question)=>(
-            <FAQ key={question.id} question={question} activeQuestion={activeQuestion} handleQuestionClick={handleQuestionClick}/>
+            <FAQ key={question.id} question={question} activeQuestion={activeQuestion} handleQuestionClick = {handleQuestionClick}/>
           )
         )
       }

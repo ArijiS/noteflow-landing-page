@@ -15,6 +15,7 @@ export default function CaretUp({
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       alt={alt}
+      
       animate={{ rotate: activeQuestion ? -180 : 0 }} // Animate rotation based on the state
       transition={{ duration: 0.3, ease: "easeIn" }}
     >

@@ -12,6 +12,8 @@ import Features from './components/sections/Features';
 
 import FAQs from './components/sections/FAQ/FAQs';
 
+import Testimonials from './components/sections/Testimonial/Testimonials';
+
 
 function App() {
   
@@ -29,6 +31,7 @@ function App() {
               <Logos />
               <Features />
               <FAQs/>
+              <Testimonials />
             </Main>
 
           </Page>

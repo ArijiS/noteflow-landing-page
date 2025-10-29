@@ -51,7 +51,7 @@ const FAQs = () => {
             </ul>
             <FAQList 
               category={category}
-              activeQuestions={activeQuestion}
+              activeQuestion={activeQuestion}
               questionsArr={questionsArr}
               handleQuestionClick={handleQuestionClick}
             />            
