@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 import { BsDashLg } from "react-icons/bs";
 import { PiCaretRightBold } from "react-icons/pi";
-import heroGraphic from "../../assets/graphics/heroGraphic.webp";
+import HeroGraphic from "../../assets/graphics/HeroGraphic.webp";
 
 
 
@@ -42,7 +42,7 @@ const Hero = () => {
 
         <div className="relative">
             <div className="absolute top-0 right-0 left-0 bottom-0 bg-primary-1300 rounded-full blur-2xl"/>
-            <img src={heroGraphic} alt="" className="relative max-h-120 w-auto justify-self-end"/>
+            <img src={HeroGraphic} alt="" className="relative max-h-120 w-auto justify-self-end"/>
         </div>
 
     </div>
