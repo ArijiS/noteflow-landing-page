@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ContextualReminders from "../../assets/graphics/contextualReminders.webp";
-import SmartOrganization from "../../assets/graphics/smartOrganization.webp";
+import ContextualReminders from "../../assets/graphics/ContextualReminders.webp";
+import SmartOrganization from "../../assets/graphics/SmartOrganization.webp";
 
 const Features = () => {
   return (
