@@ -1,7 +1,7 @@
 import React from 'react';
 
-import contextualReminders from "../../assets/graphics/contextualReminders.webp";
-import smartOrganization from "../../assets/graphics/smartOrganization.webp";
+import ContextualReminders from "../../assets/graphics/contextualReminders.webp";
+import SmartOrganization from "../../assets/graphics/smartOrganization.webp";
 
 const Features = () => {
   return (
@@ -15,7 +15,7 @@ const Features = () => {
             <div className="grid grid-cols-2 items-center gap-x-16 mb-20">
                 <figure className="relative">
                     <div className="absolute top-0 bottom-0 -left-20 right-0 bg-primary-1200 rounded-full blur-3xl opacity-40"/>
-                    <img src={smartOrganization} alt="" className="max-h-180 relative"/>
+                    <img src={SmartOrganization} alt="" className="max-h-180 relative"/>
                 </figure>
                 <div className="max-w-lg justify-self-end">
                     <p className="text-5xl/14 tracking-tighter mb-8 font-semibold">Smart Organization</p>
@@ -30,7 +30,7 @@ const Features = () => {
                 </div>
                 <figure className="relative">
                     <div className="absolute top-0 left-40 -right-10 bottom-0 bg-primary-1200 rounded-full blur-3xl opacity-50"/>
-                    <img src={contextualReminders} alt="" className="relative max-h-180 justify-self-end"/>
+                    <img src={ContextualReminders} alt="" className="relative max-h-180 justify-self-end"/>
                 </figure>
             </div>
 
