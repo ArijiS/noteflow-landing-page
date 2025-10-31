@@ -68,3 +68,17 @@
 .primary-glow-hover{
     @apply drop-shadow-[0px_0px_25px_var(--color-primary-50-glow)];
 }
+
+.noise-bg-dark{
+    @apply
+    bg-[url("../src/assets/Noise.webp")] bg-repeat;
+    background-color: var(--color-primary-1500);
+}
+
+.noise-bg-dark-to-light{
+    @apply bg-[url("../src/assets/Noise.webp"),linear-gradient(to_bottom,var(--color-primary-1500),var(--color-primary-1300))] bg-repeat; 
+}
+
+.noise-bg-light-to-dark{
+    @apply bg-[url("../src/assets/Noise.webp"),linear-gradient(to_bottom,var(--color-primary-1300),var(--color-primary-1500))] bg-repeat;
+}

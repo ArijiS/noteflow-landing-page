@@ -10,7 +10,7 @@ const Testimonials = () => {
     const [expanded, setExpanded] = useState(true);
 
   return (
-    <section className="bg-linear-to-b from-primary-1300 to-primary-1500">
+    <section className="noise-bg-light-to-dark">
         <div className="max-w-360 px-25 py-32 m-auto flex flex-col items-center">
 
             <div className="max-w-210 flex flex-col justify-center items-center m-auto gap-y-6 mb-20">

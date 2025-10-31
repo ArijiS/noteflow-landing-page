@@ -26,7 +26,7 @@ const FAQs = () => {
 
 
   return (
-    <section className="bg-linear-to-b from-primary-1500 to-primary-1300">
+    <section className="noise-bg-dark-to-light">
         <div className="max-w-360 px-25 py-32 m-auto">
 
             <h2 className="text-6xl/[4.5rem] font-semibold tracking-tighter text-center mb-8">Frequently Asked Questions</h2>

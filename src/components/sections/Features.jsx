@@ -5,7 +5,7 @@ import smartOrganization from "../../assets/graphics/smartOrganization.webp";
 
 const Features = () => {
   return (
-    <section className="bg-primary-1500 overflow-hidden">
+    <section className="noise-bg-dark">
         <div className="relative max-w-360 px-25 py-32 m-auto z-0">
 
             <div className="absolute bg-primary-1200 size-150 rounded-full top-[40%] left-full translate-x-[50%] blur-[20rem] opacity-60 -z-10"/>

@@ -9,10 +9,12 @@ import Reviews from './components/sections/Reviews';
 import Main from './components/sections/Main';
 import Logos from './components/sections/Logos';
 import Features from './components/sections/Features';
+import Footer from "./components/sections/Footer";
 
 import FAQs from './components/sections/FAQ/FAQs';
 
 import Testimonials from './components/sections/Testimonial/Testimonials';
+import Noise from "./assets/Noise.webp";
 
 
 function App() {
@@ -32,6 +34,7 @@ function App() {
               <Features />
               <FAQs/>
               <Testimonials />
+              <Footer />
             </Main>
 
           </Page>
