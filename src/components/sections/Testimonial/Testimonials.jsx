@@ -7,7 +7,7 @@ import { testimonials as testArr } from '../../../utils/content';
 
 const Testimonials = () => {
 
-    const [expanded, setExpanded] = useState(true);
+    const [expanded, setExpanded] = useState(false);
 
   return (
     <section className="noise-bg-light-to-dark">

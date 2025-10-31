@@ -7,7 +7,7 @@ const Testimonial = ({testimonial}) => {
     <motion.li className="bg-primary-1300 py-10 px-8 rounded-2xl"
       initial={{opacity:0, y:40}}
       whileInView={{opacity:1, y:0}}
-      viewport={{once:false, amount:0.75}}
+      viewport={{once:true, amount:0.75}}
       transition={{opacity:{duration: 0.75, ease: easeInOut}}}
     >
       <div className="flex mb-8 gap-x-1">
