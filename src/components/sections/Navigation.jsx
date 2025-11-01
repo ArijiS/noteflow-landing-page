@@ -5,25 +5,25 @@ import { navigationLinks } from '../../utils/content';
 
 const Navigation = () => {
   return (
-    <nav className="py-10 px-25 flex justify-between items-center m-auto max-w-360">
+    <nav className="py-10 max-xl:py-8 px-25 max-xl:px-16 flex justify-between items-center m-auto max-w-360">
       <a href="#" className="flex gap-x-3">
         <img src={logo} alt="" className="h-6" />
         <p className="font-bold text-[1.25rem] tracking-tight">NoteFlow</p>
       </a>
-      <ul className="flex gap-x-8">
+      <ul className="flex gap-x-8 max-xl:gap-x-6">
         {
           navigationLinks.map(
             ({id, link, href})=>(
               <li key={id}>
-                <a href={href} className="inline-block text-lg/8 font-light hover:text-primary-500 transition-properties">{link}</a>
+                <a href={href} className="inline-block text-lg/8 max-xl:text-base/loose font-light hover:text-primary-500 transition-properties">{link}</a>
               </li>
             )
           )
         }
       </ul>
       <div className="text-lg font-light flex gap-x-3">
-        <button className="px-8 py-4 rounded-full border-2 border-primary-50 hover:bg-primary-50 hover:text-primary-1300 cursor-pointer transition-properties">Login</button>
-        <button className="px-8 py-4 rounded-full bg-primary-500 text-primary-1300 cursor-pointer primary-glow hover:primary-50-glow hover:bg-primary-50 transition-properties">Get Started</button>
+        <button className="px-8 py-4 max-xl:px-6 max-xl:py-3 max-xl:text-base/loose rounded-full border-2 border-primary-50 hover:bg-primary-50 hover:text-primary-1300 cursor-pointer transition-properties">Login</button>
+        <button className="px-8 py-4 max-xl:px-6 max-xl:py-3 max-xl:text-base/loose rounded-full bg-primary-500 text-primary-1300 cursor-pointer primary-glow hover:primary-50-glow hover:bg-primary-50 transition-properties">Get Started</button>
       </div>
     </nav>
   )
