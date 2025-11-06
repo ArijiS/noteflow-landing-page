@@ -15,7 +15,7 @@ const Footer = () => {
             {
                 footerCols.map(
                     ({id, category, links})=>(
-                        <div className="w-fit">
+                        <div className="w-fit" key={`${id}-container`}>
                         <p key={id} className="text-xl font-semibold tracking-tight mb-8">{category}</p>
                         <ul className="flex flex-col gap-y-4">
                             {links.map((link, i) => (

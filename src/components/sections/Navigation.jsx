@@ -1,16 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { useContext } from 'react';
 
+import { ModalContext } from '../../contexts/ModalContext';
+
+
+import MobileMenuIcon from "./MobileMenu/MobileMenuIcon";
 import logo from "../../assets/Logo.svg";
 import { navigationLinks } from '../../utils/content';
 
 const Navigation = () => {
+
+  const {setActiveModal} = useContext(ModalContext);
+
   return (
-    <nav className="py-10 max-xl:py-8 px-25 max-xl:px-16 flex justify-between items-center m-auto max-w-360">
+    <nav className="py-10 max-xl:py-8 px-25 max-xl:px-16 max-lg:px-8 flex justify-between items-center m-auto max-w-360">
       <a href="#" className="flex gap-x-3">
         <img src={logo} alt="" className="h-6" />
         <p className="font-bold text-[1.25rem] tracking-tight">NoteFlow</p>
       </a>
-      <ul className="flex gap-x-8 max-xl:gap-x-6">
+      <ul className="flex gap-x-8 max-xl:gap-x-6 max-lg:hidden">
         {
           navigationLinks.map(
             ({id, link, href})=>(
@@ -21,10 +29,13 @@ const Navigation = () => {
           )
         }
       </ul>
-      <div className="text-lg font-light flex gap-x-3">
+      <div className="text-lg font-light flex gap-x-3 max-lg:hidden">
         <button className="px-8 py-4 max-xl:px-6 max-xl:py-3 max-xl:text-base/loose rounded-full border-2 border-primary-50 hover:bg-primary-50 hover:text-primary-1300 cursor-pointer transition-properties">Login</button>
-        <button className="px-8 py-4 max-xl:px-6 max-xl:py-3 max-xl:text-base/loose rounded-full bg-primary-500 text-primary-1300 cursor-pointer primary-glow hover:primary-50-glow hover:bg-primary-50 transition-properties">Get Started</button>
+        <button className="px-8 py-4 max-xl:px-6 max-xl:py-3 max-xl:text-base/loose rounded-full bg-primary-500 text-primary-1300 cursor-pointer primary-glow hover:primary-50-glow hover:bg-primary-50 transition-properties"
+        onClick = {()=> setActiveModal("signUp")}
+        >Get Started</button>
       </div>
+      <MobileMenuIcon />
     </nav>
   )
 }

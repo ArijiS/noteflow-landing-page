@@ -12,15 +12,23 @@ import Features from './components/sections/Features';
 import Footer from "./components/sections/Footer";
 
 import FAQs from './components/sections/FAQ/FAQs';
+import MobileMenu from './components/sections/MobileMenu/MobileMenu';
 
 import Testimonials from './components/sections/Testimonial/Testimonials';
+
+import Modal from "./components/sections/Modal/Modal";
 import Noise from "./assets/Noise.webp";
+import SignUpModal from './components/sections/Modal/SignUpModal';
+
+import { ModalContext,ModalContextProvider } from './contexts/ModalContext';
 
 
 function App() {
   
 
   return (
+
+        <ModalContextProvider >
           <Page>
 
             <Header>
@@ -37,7 +45,13 @@ function App() {
               <Footer />
             </Main>
 
+            <Modal modalName="signUp">
+              <SignUpModal />
+            </Modal>
+
+            <MobileMenu />
           </Page>
+        </ModalContextProvider>
   )
 }
 

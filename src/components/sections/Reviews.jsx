@@ -15,7 +15,7 @@ const Reviews = () => {
                     )
                 }
                 </ul>
-                <p className="text-xl max-xl:text-lg font-light text-primary-100 tracking-normal">Trusted by <span class="font-bold text-primary-500 tracking-tight">12,653+</span> productivity junkies</p>
+                <p className="text-xl max-xl:text-lg font-light text-primary-100 tracking-normal">Trusted by <span className="font-bold text-primary-500 tracking-tight">12,653+</span> productivity junkies</p>
             </section>
   )
 }
