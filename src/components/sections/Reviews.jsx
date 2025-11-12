@@ -3,7 +3,7 @@ import { reviews } from '../../utils/content'
 
 const Reviews = () => {
   return (
-            <section className="max-w-360 px-25 max-xl:px-16 m-auto flex flex-wrap gap-x-4 max-xl:gap-x-3 gap-y-4 items-center">
+            <section className="max-w-360 px-25 max-xl:px-16 max-lg:px-8 max-md:px-6 m-auto flex flex-wrap gap-x-4 max-xl:gap-x-3 gap-y-4 items-center">
                 <ul className="flex">
                 {
                     reviews.map(
@@ -15,7 +15,7 @@ const Reviews = () => {
                     )
                 }
                 </ul>
-                <p className="text-xl max-xl:text-lg font-light text-primary-100 tracking-normal">Trusted by <span className="font-bold text-primary-500 tracking-tight">12,653+</span> productivity junkies</p>
+                <p className="text-xl max-xl:text-lg max-lg:text-base/loose font-light text-primary-100 tracking-normal">Trusted by <span className="font-bold text-primary-500 tracking-tight">12,653+</span> productivity junkies</p>
             </section>
   )
 }

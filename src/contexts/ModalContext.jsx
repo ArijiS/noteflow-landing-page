@@ -13,4 +13,8 @@ const ModalContextProvider = ({children}) => {
     );
 }
 
-export { ModalContext, ModalContextProvider };
+const useModalContext = () => {
+    return useContext(ModalContext);
+}
+
+export { ModalContext, ModalContextProvider, useModalContext };

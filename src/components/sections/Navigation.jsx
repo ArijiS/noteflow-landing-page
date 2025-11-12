@@ -13,10 +13,10 @@ const Navigation = () => {
   const {setActiveModal} = useContext(ModalContext);
 
   return (
-    <nav className="py-10 max-xl:py-8 px-25 max-xl:px-16 max-lg:px-8 flex justify-between items-center m-auto max-w-360">
-      <a href="#" className="flex gap-x-3">
-        <img src={logo} alt="" className="h-6" />
-        <p className="font-bold text-[1.25rem] tracking-tight">NoteFlow</p>
+    <nav className="py-10 max-xl:py-8 max-md:py-6 px-25 max-xl:px-16 max-lg:px-8 max-md:px-6 flex justify-between items-center m-auto max-w-360">
+      <a href="#" className="flex gap-x-3 max-md:gap-x-2 items-center">
+        <img src={logo} alt="" className="h-6 max-md:h-5" />
+        <p className="font-bold text-[1.25rem] max-md:text-lg/8 tracking-tight">NoteFlow</p>
       </a>
       <ul className="flex gap-x-8 max-xl:gap-x-6 max-lg:hidden">
         {

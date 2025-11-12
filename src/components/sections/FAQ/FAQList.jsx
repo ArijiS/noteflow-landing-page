@@ -9,7 +9,7 @@ const FAQList = ({category, activeQuestion, questionsArr, handleQuestionClick}) 
   const [inView, setInView] = useState(false);
 
   return (
-    <motion.ul className="m-auto flex flex-col gap-y-14 max-w-206.5"
+    <motion.ul className="m-auto flex flex-col gap-y-14 max-lg:gap-y-12 max-w-206.5"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       key={category}

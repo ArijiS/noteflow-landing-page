@@ -21,13 +21,14 @@ import Noise from "./assets/Noise.webp";
 import SignUpModal from './components/sections/Modal/SignUpModal';
 
 import { ModalContext,ModalContextProvider } from './contexts/ModalContext';
+import { MobileMenuContextProvider } from './contexts/MobileMenuContext';
 
 
 function App() {
   
 
   return (
-
+        <MobileMenuContextProvider >
         <ModalContextProvider >
           <Page>
 
@@ -52,6 +53,7 @@ function App() {
             <MobileMenu />
           </Page>
         </ModalContextProvider>
+        </MobileMenuContextProvider>
   )
 }
 
