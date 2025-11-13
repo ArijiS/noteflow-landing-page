@@ -18,7 +18,7 @@ const Hero = () => {
     <section className="tracking-tight m-auto max-w-360 grid grid-cols-[5fr_4fr] max-xl:grid-cols-2 max-md:grid-cols-1 max-md:gap-y-12 gap-x-17 max-xl:gap-x-10 justify-between items-center py-42 max-xl:py-38 max-lg:py-32 max-md:py-24 px-25 max-xl:px-16 max-lg:px-8 max-md:px-6">
 
         <div className="flex flex-col">
-            <h1 className="text-6xl/[4.5rem] max-xl:text-5xl/[3.5rem] max-lg:text-4xl font-semibold mb-6 max-xl:mb-4 tracking-tighter max-lg:tracking-tight">AI-Powered Notes. Organize and Summarize in Seconds</h1>
+            <h1 className="text-6xl/[4.5rem] max-xl:text-5xl/[3.5rem] max-lg:text-4xl max-sm:text-3xl/9 font-semibold mb-6 max-xl:mb-4 tracking-tighter max-lg:tracking-tight max-sm:tracking-tighter">AI-Powered Notes. Organize and Summarize in Seconds</h1>
 
             <p className="text-xl/[2.5rem] max-xl:text-lg/8 max-lg:text-base/loose font-light text-primary-100 mb-10 max-xl:mb-8">Let AI organize & summarize your notes,<br/>
                 saving you time and boosting productivity</p>
@@ -28,7 +28,7 @@ const Hero = () => {
             ><p>Get Started</p>
             
             <motion.div 
-            className="flex items-center stroke-primary-1300" 
+            className="flex max-sm:hidden items-center stroke-primary-1300" 
             variants={{hover:{x:8}}}
             transition={{type: "tween", duration: 0.2, ease: "easeInOut"}}
             >
@@ -47,7 +47,7 @@ const Hero = () => {
 
         <div className="relative">
             <div className="absolute top-0 right-0 left-0 bottom-0 bg-primary-1300 rounded-full blur-2xl"/>
-            <img src={HeroGraphic} alt="" className="relative max-h-120 w-auto justify-self-end max-md:justify-self-center"/>
+            <img src={HeroGraphic} alt="" className="relative max-h-120 w-auto max-sm:max-w-full max-sm:h-auto justify-self-end max-md:justify-self-center"/>
         </div>
 
     </section>

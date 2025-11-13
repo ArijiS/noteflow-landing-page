@@ -15,16 +15,16 @@ const Testimonials = () => {
 
             <div className="max-w-210 flex flex-col justify-center items-center m-auto gap-y-6 max-lg:gap-y-4 mb-20 max-xl:mb-16">
                 <p className="text-base/8 text-primary-1300 tracking-normal px-4 py-2 bg-primary-500 primary-glow rounded-full max-lg:mb-8">Testimonials</p>
-                <h2 className="text-6xl/18 max-xl:text-5xl/16 max-lg:text-4xl font-semibold tracking-tighter max-lg:tracking-tight text-center">What our AI-powered<br/>notetakers have to say</h2>
-                <p className="text-xl/10 max-lg:text-lg/8 text-primary-100 tracking-normal text-center max-w-154 max-md:max-w-max">NoteFlow has helped 1000's supercharge their productivity with cutting edge AI note taking tools</p>
+                <h2 className="text-6xl/18 max-xl:text-5xl/16 max-lg:text-4xl max-sm:text-3xl/9 font-semibold tracking-tighter max-lg:tracking-tight text-center">What our AI-powered<br/>notetakers have to say</h2>
+                <p className="text-xl/10 max-lg:text-lg/8 max-sm:text-base/loose text-primary-100 tracking-normal text-center max-w-154 max-md:max-w-max">NoteFlow has helped 1000's supercharge their productivity with cutting edge AI note taking tools</p>
             </div>
 
-            <div className="mb-20 max-xl:mb-18 max-lg:mb-16 grid grid-cols-3 max-lg:grid-cols-2 gap-x-6 max-xl:gap-x-4">
+            <div className="mb-20 max-xl:mb-18 max-lg:mb-16 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-y-4 gap-x-6 max-xl:gap-x-4">
               <TestimonialsList testimonials = {testArr.slice(0, expanded ? 5 : 2)}/>
               <TestimonialsList testimonials = {testArr.slice(5, expanded ? 10 : 7)}/>
               <TestimonialsList testimonials = {testArr.slice(10, expanded ? 15 : 12)} className={"max-lg:hidden"}/>
             </div>
-            <button className="text-lg max-xl:text-base/loose font-light tracking-normal w-50 max-xl:w-46 h-16 max-xl:h-15 rounded-full border-2 border-primary-50 cursor-pointer hover:bg-primary-50 hover:text-primary-1300 transition-properties flex gap-x-3 items-center group justify-center" onClick={ ()=> setExpanded( (prev) => !prev ) }>
+            <button className="text-lg max-xl:text-base/loose font-light tracking-normal w-50 max-xl:w-46 h-16 max-xl:h-15 max-sm:h-14 max-sm:w-42 rounded-full border-2 border-primary-50 cursor-pointer hover:bg-primary-50 hover:text-primary-1300 transition-properties flex gap-x-3 items-center group justify-center" onClick={ ()=> setExpanded( (prev) => !prev ) }>
               {expanded ? "Show less" : "Show more"}
               <CaretUp width={2} className={`stroke-primary-50 group-hover:stroke-primary-1300 rotate-180 transition-properties ${expanded && "rotate-360"}`}/>
               </button>

@@ -17,7 +17,7 @@ const Footer = () => {
                     ({id, category, links})=>(
                         <div className="w-fit" key={`${id}-container`}>
                         <p key={id} className="text-xl font-semibold tracking-tight mb-8">{category}</p>
-                        <ul className="flex flex-col gap-y-4">
+                        <ul className="flex flex-col gap-y-4 max-md:gap-y-3">
                             {links.map((link, i) => (
                                 <li key={i} className="text-lg max-xl:text-base font-light hover:text-primary-500 transition-properties"><a href="#">{link}</a></li>
                             )
