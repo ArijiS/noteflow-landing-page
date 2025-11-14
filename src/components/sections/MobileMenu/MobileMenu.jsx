@@ -31,7 +31,7 @@ const MobileMenu = () => {
       }
     }}
     transition={{duration: 0.25}}
-    
+    onClick={ (e) => e.target === e.currentTarget && setMobileMenuOpened(false)}
     >
 
       <motion.div className="noise-bg-1400 flex basis-80 flex-col justify-between px-6 py-8 rounded-2xl" 

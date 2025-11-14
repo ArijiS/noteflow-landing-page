@@ -20,16 +20,26 @@ import Modal from "./components/sections/Modal/Modal";
 import Noise from "./assets/Noise.webp";
 import SignUpModal from './components/sections/Modal/SignUpModal';
 
-import { ModalContext,ModalContextProvider } from './contexts/ModalContext';
-import { MobileMenuContextProvider } from './contexts/MobileMenuContext';
+import { useModalContext , ModalContextProvider } from './contexts/ModalContext';
+import { useMobileMenuContext , MobileMenuContextProvider } from './contexts/MobileMenuContext';
+import { useEffect } from 'react';
 
 
 function App() {
+
+  const { activeModal } = useModalContext();
+  const { mobileMenuOpened } = useMobileMenuContext();
+
+  useEffect(
+    ()=> {
+      document.documentElement.style.overflow = (activeModal || mobileMenuOpened) ? "hidden" : "";
+    }
+    , [activeModal, mobileMenuOpened]
+  );
   
 
   return (
-        <MobileMenuContextProvider >
-        <ModalContextProvider >
+        
           <Page>
 
             <Header>
@@ -52,8 +62,7 @@ function App() {
 
             <MobileMenu />
           </Page>
-        </ModalContextProvider>
-        </MobileMenuContextProvider>
+        
   )
 }
 

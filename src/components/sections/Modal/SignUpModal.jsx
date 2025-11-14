@@ -39,7 +39,7 @@ const SignUpModal = () => {
   }
 
   return (
-    <section className="grid grid-cols-2 max-sm:grid-cols-1 max-w-205">
+    <section className="grid grid-cols-2 max-sm:grid-cols-1 max-w-205 max-sm:w-105">
       <div className="noise-bg-1300 p-10 max-md:px-6 max-md:py-8 flex max-sm:hidden flex-col gap-y-4 items-center justify-center text-center tracking-normal">
         <p className="text-4xl/12 font-bold tracking-tight">Lets Get You<br/>Signed Up</p>
         <p className="text-lg/8 max-md:text-base/loose font-light">No charges, no fees. Get note taking in minutes!</p>
